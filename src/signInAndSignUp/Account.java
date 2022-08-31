@@ -6,6 +6,11 @@ public class Account {
     private String accountNumber;
     private BigDecimal balance;
 
+    public Account() {
+        accountNumber = "";
+        balance = new BigDecimal(Integer.toString(0));
+    }
+
     public BigDecimal getBalance() {
         return balance;
     }

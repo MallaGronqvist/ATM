@@ -1,6 +1,7 @@
 package menus.customerMenu;
 
 import menus.mainMenu.MainMenu;
+import operations.ViewBalance;
 import signInAndSignUp.Customer;
 
 import java.util.List;
@@ -22,7 +23,7 @@ public class CustomerMenuModel {
     public void processOption ( int selectedOption) throws IndexOutOfBoundsException {
 
         switch (selectedOption) {
-            case 1 -> System.out.println("view balance");
+            case 1 -> new ViewBalance(customer);
             case 2 -> System.out.println("withdraw");
             case 3 -> System.out.println("deposit");
             case 4 -> System.out.println("transfer");
