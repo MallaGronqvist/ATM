@@ -1,8 +1,15 @@
+package signInAndSignUp;
+
 import java.security.NoSuchAlgorithmException;
 
 public class Customer {
     private final String fullName;
     private String userName;
+
+    public String getPassword() {
+        return password;
+    }
+
     private String password;
 
     public void setAccountNumber(String accountNumber) {
@@ -10,6 +17,11 @@ public class Customer {
     }
 
     private String accountNumber;
+
+    public String getHashingSalt() {
+        return hashingSalt;
+    }
+
     private String hashingSalt;
     private int customerID;
 
@@ -28,7 +40,6 @@ public class Customer {
 
     public void setPassword(String password) throws NoSuchAlgorithmException {
         this.hashingSalt = HashGenerator.getSalt();
-        String SHA_256_secured_password = HashGenerator.get_SHA_256_SecurePassword(password, hashingSalt);
-        this.password = SHA_256_secured_password;
+        this.password = HashGenerator.get_SHA_256_SecurePassword(password, hashingSalt);
     }
 }

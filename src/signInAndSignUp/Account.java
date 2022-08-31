@@ -1,3 +1,5 @@
+package signInAndSignUp;
+
 import java.math.BigDecimal;
 
 public class Account {

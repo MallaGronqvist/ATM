@@ -1,3 +1,5 @@
+package signInAndSignUp;
+
 import java.util.Scanner;
 
 public class InputReader {

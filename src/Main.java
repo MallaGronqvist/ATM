@@ -1,8 +1,11 @@
+import menus.mainMenu.MainMenu;
+import signInAndSignUp.AccountDatabase;
+import signInAndSignUp.CustomerDatabase;
+
+
 public class Main {
     public static void main(String[] args) {
-        CustomerDatabase customerDatabase = new CustomerDatabase();
-        AccountDatabase accountDatabase = new AccountDatabase();
-        SignUp.createNewCustomer();
+        new MainMenu();
     }
 
 }

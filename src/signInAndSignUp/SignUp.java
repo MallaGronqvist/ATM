@@ -1,9 +1,13 @@
+package signInAndSignUp;
+
+import menus.mainMenu.MainMenu;
+
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 public class SignUp {
 
-    public static void createNewCustomer(){
+    public SignUp() {
         final String fullName = getFullName();
         final String userName = getUserName();
         final String passWord = getPassword();
@@ -13,14 +17,16 @@ public class SignUp {
             newCustomer.setPassword(passWord);
         } catch (NoSuchAlgorithmException e) {
             System.out.println("An unexpected error has happened. You cannot create an account at the moment.");
-            // New main menu here.
+
+            new MainMenu();
         }
         Account newAccount = new Account();
         newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
         newCustomer.setAccountNumber(newAccount.getAccountNumber());
         CustomerDatabase.addCustomer(newCustomer);
         AccountDatabase.addAccount(newAccount);
-        // New main menu here.
+
+        new MainMenu();
     }
 
     public static String getUserName(){

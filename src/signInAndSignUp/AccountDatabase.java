@@ -1,14 +1,13 @@
+package signInAndSignUp;
+
+import signInAndSignUp.Account;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class AccountDatabase {
-    private static Map<String, Account> allAccounts;
+    private static Map<String, Account> allAccounts = new HashMap<>();
     private static int accountCounter;
-
-    public AccountDatabase() {
-        this.allAccounts = new HashMap<>();
-        this.accountCounter = 0;
-    }
 
     public static void addAccount(Account account){
         allAccounts.put(account.getAccountNumber(), account);

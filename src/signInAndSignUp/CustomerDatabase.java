@@ -1,22 +1,23 @@
+package signInAndSignUp;
+
+import signInAndSignUp.Customer;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class CustomerDatabase {
-    private static Map<String, Customer> allCustomers;
+    private static Map<String, Customer> allCustomers = new HashMap<>();
     private static int idCounter;
-
-    public CustomerDatabase() {
-        this.allCustomers = new HashMap<>();
-        this.idCounter = 0;
-    }
 
     public static void addCustomer(Customer customer){
         customer.setCustomerID(++idCounter);
         allCustomers.put(customer.getUserName(), customer);
     }
 
-    public Customer getCustomer(String userName){
-        return allCustomers.get(userName);
+    public static Customer getCustomer(String userName) throws NullPointerException{
+        if(allCustomers.containsKey(userName)){
+            return allCustomers.get(userName);
+        } else throw new NullPointerException();
     }
 
     public static boolean userNameAlreadyTaken(String userName){
