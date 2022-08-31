@@ -9,6 +9,7 @@ public class SignIn {
     public SignIn() {
         try {
             Customer customer = getCustomerByUserName();
+
             checkPassword(customer);
 
             new CustomerMenu(customer);

@@ -2,6 +2,7 @@ package utils;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
 
 public class MenuPrinter {
 
@@ -42,5 +43,14 @@ public class MenuPrinter {
                     "not displaying correctly.";
             System.out.println(errorMessage);
         }
+    }
+
+    public static void waitForEnter() {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println();
+        System.out.println("Press enter to continue...");
+
+        keyboard.nextLine();
     }
 }

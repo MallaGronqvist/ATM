@@ -20,4 +20,8 @@ public class AccountDatabase {
 
         return clearingNumber + accountNumber;
     }
+
+    public static Account getAccount(String accountNumber){
+        return allAccounts.get(accountNumber);
+    }
 }

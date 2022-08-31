@@ -16,6 +16,10 @@ public class Customer {
         this.accountNumber = accountNumber;
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
     private String accountNumber;
 
     public String getHashingSalt() {
