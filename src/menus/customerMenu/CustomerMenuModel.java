@@ -1,8 +1,10 @@
 package menus.customerMenu;
 
 import menus.mainMenu.MainMenu;
-import operations.ViewBalance;
-import signInAndSignUp.Customer;
+import transactions.Deposit;
+import transactions.Withdraw;
+import transactions.ViewBalance;
+import customer.Customer;
 
 import java.util.List;
 
@@ -24,12 +26,13 @@ public class CustomerMenuModel {
 
         switch (selectedOption) {
             case 1 -> new ViewBalance(customer);
-            case 2 -> System.out.println("withdraw");
-            case 3 -> System.out.println("deposit");
+            case 2 -> new Withdraw(customer);
+            case 3 -> new Deposit(customer);
             case 4 -> System.out.println("transfer");
             case 5 -> System.out.println("edit details");
             case 6 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
         }
+        new CustomerMenu(customer);
     }
 }

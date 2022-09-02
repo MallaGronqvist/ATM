@@ -1,9 +1,9 @@
-package signInAndSignUp;
+package customer;
 
 import java.security.NoSuchAlgorithmException;
 
 public class Customer {
-    private final String fullName;
+    private final String FULL_NAME;
     private String userName;
 
     public String getPassword() {
@@ -27,10 +27,15 @@ public class Customer {
     }
 
     private String hashingSalt;
+
+    public int getCustomerID() {
+        return customerID;
+    }
+
     private int customerID;
 
     public Customer(String fullName, String userName) {
-        this.fullName = fullName;
+        this.FULL_NAME = fullName;
         this.userName = userName;
     }
 

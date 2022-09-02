@@ -1,13 +1,18 @@
-package signInAndSignUp;
+package customer;
 
-import signInAndSignUp.Customer;
+import customer.Customer;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CustomerDatabase {
-    private static Map<String, Customer> allCustomers = new HashMap<>();
+    private static Map<String, Customer> allCustomers;
     private static int idCounter;
+
+    static{
+        allCustomers = new HashMap<>();
+        idCounter = 0;
+    }
 
     public static void addCustomer(Customer customer){
         customer.setCustomerID(++idCounter);

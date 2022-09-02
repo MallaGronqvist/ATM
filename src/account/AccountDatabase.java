@@ -1,13 +1,18 @@
-package signInAndSignUp;
+package account;
 
-import signInAndSignUp.Account;
+import account.Account;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class AccountDatabase {
-    private static Map<String, Account> allAccounts = new HashMap<>();
+    private static Map<String, Account> allAccounts;
     private static int accountCounter;
+
+    static{
+        allAccounts = new HashMap<>();
+        accountCounter = 0;
+    }
 
     public static void addAccount(Account account){
         allAccounts.put(account.getAccountNumber(), account);
@@ -21,7 +26,12 @@ public class AccountDatabase {
         return clearingNumber + accountNumber;
     }
 
-    public static Account getAccount(String accountNumber){
+    // Ask if this use of exception is correct
+    public static Account getAccount(String accountNumber)throws NullPointerException{
         return allAccounts.get(accountNumber);
+    }
+
+    public static Map<String, Account> getAllAccounts() {
+        return allAccounts;
     }
 }

@@ -1,6 +1,6 @@
 package menus.customerMenu;
 
-import signInAndSignUp.Customer;
+import customer.Customer;
 
 public class CustomerMenu {
     public CustomerMenu(Customer customer) {

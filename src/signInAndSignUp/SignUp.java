@@ -1,9 +1,12 @@
 package signInAndSignUp;
 
+import account.Account;
+import account.AccountDatabase;
+import customer.Customer;
+import customer.CustomerDatabase;
 import menus.mainMenu.MainMenu;
 
 import java.security.NoSuchAlgorithmException;
-import java.util.Scanner;
 
 public class SignUp {
 
