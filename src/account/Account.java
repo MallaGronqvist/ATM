@@ -19,10 +19,14 @@ public class Account {
         this.accountNumber = accountNumber;
     }
 
-    public void withDraw(BigDecimal amount) throws InsufficientBalanceException {
+    public void withDraw(BigDecimal amount) throws InsufficientBalanceException, IllegalArgumentException {
         // If balance is lesser than the amount to withdraw.
         if(this.balance.compareTo(amount) == -1){
             throw new InsufficientBalanceException();
+        }
+        // If the amount is a negative number.
+        if(amount.compareTo(new BigDecimal(0)) == -1){
+            throw new IllegalArgumentException();
         }
         this.balance = balance.subtract(amount);
     }

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ATM:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="First commit. Worked in sign up -feature.">
-      <change afterPath="$PROJECT_DIR$/src/transactions/Deposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transactions/Transfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transactions/Withdraw.java" afterDir="false" />
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some refactoring.">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ATM_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ATM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/ViewBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/HashGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/HashGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/signInAndSignUp/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/ViewBalance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Withdraw.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661953183823</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Did some refactoring.">
+      <created>1662128678507</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662128678507</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit. Worked in sign up -feature." />
     <MESSAGE value="Stared working on view balance -feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stared working on view balance -feature." />
+    <MESSAGE value="Did some refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some refactoring." />
   </component>
 </project>

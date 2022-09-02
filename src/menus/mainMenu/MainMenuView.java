@@ -7,6 +7,8 @@ import java.util.List;
 public class MainMenuView {
 
     public MainMenuView(List<String> menuOptions) {
+        MenuPrinter.clearConsole();
+        System.out.println("*****ATM*****");
         System.out.println("Choose an operation:");
 
         MenuPrinter.listOptions(menuOptions);

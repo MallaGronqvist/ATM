@@ -7,6 +7,8 @@ import java.util.List;
 public class CustomerMenuView {
 
     public CustomerMenuView(List<String> menuOptions) {
+        MenuPrinter.clearConsole();
+
         System.out.println("Choose an operation:");
 
         MenuPrinter.listOptions(menuOptions);

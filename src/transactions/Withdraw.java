@@ -14,8 +14,8 @@ public class Withdraw {
             Account account = AccountDatabase.getAccount(customer.getAccountNumber());
             account.withDraw(amountToWithDraw);
             System.out.println("Withdrawal succeeded.");
-        } catch (NumberFormatException e) {
-            System.out.println("You entered invalid characters.");
+        } catch (IllegalArgumentException e) {
+            System.out.println("You entered invalid characters or a negative number.");
             new Withdraw(customer);
         } catch (Account.InsufficientBalanceException e) {
             System.out.println("Insufficient balance.");

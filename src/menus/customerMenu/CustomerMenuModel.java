@@ -5,6 +5,7 @@ import transactions.Deposit;
 import transactions.Withdraw;
 import transactions.ViewBalance;
 import customer.Customer;
+import utils.MenuPrinter;
 
 import java.util.List;
 
@@ -24,6 +25,8 @@ public class CustomerMenuModel {
 
     public void processOption ( int selectedOption) throws IndexOutOfBoundsException {
 
+        MenuPrinter.clearConsole();
+
         switch (selectedOption) {
             case 1 -> new ViewBalance(customer);
             case 2 -> new Withdraw(customer);
@@ -33,6 +36,9 @@ public class CustomerMenuModel {
             case 6 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
         }
+
+        MenuPrinter.waitForEnter();
+
         new CustomerMenu(customer);
     }
 }

@@ -22,10 +22,14 @@ public class Deposit {
 
         BigDecimal amountToDeposit = new BigDecimal(0);
         try {
-        amountToDeposit = requestAmountToDeposit();
+            amountToDeposit = requestAmountToDeposit();
 
-        } catch (NumberFormatException e) {
-            System.out.println("You entered invalid characters.");
+            if(amountToDeposit.compareTo(new BigDecimal(0))== -1){
+                throw new IllegalArgumentException();
+            }
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("You entered invalid characters or a negative number.");
             new Deposit(customer);
         }
 
