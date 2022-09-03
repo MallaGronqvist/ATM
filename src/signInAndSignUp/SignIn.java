@@ -5,6 +5,7 @@ import customer.CustomerDatabase;
 import customer.HashGenerator;
 import menus.customerMenu.CustomerMenu;
 import menus.mainMenu.MainMenu;
+import utils.InputReader;
 
 import java.security.NoSuchAlgorithmException;
 

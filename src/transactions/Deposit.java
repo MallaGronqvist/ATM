@@ -4,7 +4,7 @@ import account.Account;
 import account.AccountDatabase;
 import customer.Customer;
 import menus.customerMenu.CustomerMenu;
-import signInAndSignUp.InputReader;
+import utils.InputReader;
 
 import java.math.BigDecimal;
 

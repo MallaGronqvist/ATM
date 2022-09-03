@@ -1,4 +1,4 @@
-package signInAndSignUp;
+package utils;
 
 import java.util.Scanner;
 
