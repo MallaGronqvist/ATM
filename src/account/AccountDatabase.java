@@ -26,9 +26,9 @@ public class AccountDatabase {
         return clearingNumber + accountNumber;
     }
 
-    // Ask if this use of exception is correct
-    public static Account getAccount(String accountNumber)throws NullPointerException{
-        return allAccounts.get(accountNumber);
+    // Ask if this should use NullPointerException
+    public static Account getAccount(String accountNumber){
+            return allAccounts.get(accountNumber);
     }
 
     public static Map<String, Account> getAllAccounts() {

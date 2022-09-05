@@ -2,6 +2,7 @@ package menus.customerMenu;
 
 import menus.mainMenu.MainMenu;
 import transactions.Deposit;
+import transactions.Transfer;
 import transactions.Withdraw;
 import transactions.ViewBalance;
 import customer.Customer;
@@ -31,7 +32,7 @@ public class CustomerMenuModel {
             case 1 -> new ViewBalance(customer);
             case 2 -> new Withdraw(customer);
             case 3 -> new Deposit(customer);
-            case 4 -> System.out.println("transfer");
+            case 4 -> new Transfer(customer);
             case 5 -> System.out.println("edit details");
             case 6 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
