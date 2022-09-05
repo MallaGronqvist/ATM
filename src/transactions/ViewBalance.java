@@ -5,11 +5,11 @@ import account.AccountDatabase;
 import customer.Customer;
 import utils.MenuPrinter;
 
-public class ViewBalance {
+public class ViewBalance implements Transaction{
 
     public ViewBalance(Customer customer) {
         System.out.println("Testing purposes; customer id: " + customer.getCustomerID());
-        Account account = AccountDatabase.getAccount(customer.getAccountNumber());
+        Account account = fetchAccountFromDatabase(customer.getAccountNumber());
         System.out.println("Account number: " + account.getAccountNumber());
         System.out.println("Current balance: " + account.getBalance());
     }

@@ -1,7 +1,5 @@
 package menus.customerMenu;
 
-import menus.mainMenu.MainMenuModel;
-import menus.mainMenu.MainMenuView;
 
 import java.util.Scanner;
 

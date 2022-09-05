@@ -7,11 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring.">
+      <change afterPath="$PROJECT_DIR$/src/transactions/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/signInAndSignUp/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transactions/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/ViewBalance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transactions/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Withdraw.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -147,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662130430382</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Did some more refactoring.">
+      <created>1662191217038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662191217038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
