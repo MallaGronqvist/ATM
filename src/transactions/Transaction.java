@@ -9,7 +9,7 @@ import utils.InputReader;
 import java.math.BigDecimal;
 
 public interface Transaction {
-    default BigDecimal getAmountFromCustomer(Customer customer){
+    default BigDecimal promptCustomerForAmount(Customer customer){
         BigDecimal amount = null;
 
         try {
@@ -25,7 +25,7 @@ public interface Transaction {
         } catch (IllegalArgumentException e) {
             System.out.println("Invalid input: You entered invalid characters, a negative number " +
                     "or an amount that exceeds the max limit of 20 000.");
-            amount = getAmountFromCustomer(customer);
+            amount = promptCustomerForAmount(customer);
         }
 
         return amount;
@@ -33,6 +33,12 @@ public interface Transaction {
 
     private BigDecimal requestAmount() throws NumberFormatException{
         String input = InputReader.requestTextInput("Enter amount [Or enter 'x' to discontinue transaction]:");
+
+        input = input.replaceAll(",", ".");
+
+        if(getNumberOfDecimalPlaces(input) > 2){
+            throw new NumberFormatException();
+        }
 
         if (input.equalsIgnoreCase("x")){
             return null;
@@ -42,6 +48,11 @@ public interface Transaction {
             return amount;
         }
 
+    }
+
+    private int getNumberOfDecimalPlaces(String input) {
+        int index = input.indexOf(".");
+        return index < 0 ? 0 : input.length() - index - 1;
     }
 
     static Account fetchAccountFromDatabase(String accountNumber){

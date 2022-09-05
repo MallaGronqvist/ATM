@@ -12,7 +12,7 @@ public class Deposit implements Transaction {
 
         Transaction.confirmSourceAccount(customer, account);
 
-        BigDecimal amountToDeposit = getAmountFromCustomer(customer);
+        BigDecimal amountToDeposit = promptCustomerForAmount(customer);
 
         account.deposit(amountToDeposit);
 

@@ -17,7 +17,7 @@ public class Transfer implements Transaction {
         if (invalidTargetAccount(targetAccount)){
             new Transfer(customer);
         } else{
-            BigDecimal amount = getAmountFromCustomer(customer);
+            BigDecimal amount = promptCustomerForAmount(customer);
 
             Withdraw.executeWithdrawal(customer, amount);
 

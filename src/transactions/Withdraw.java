@@ -1,17 +1,15 @@
 package transactions;
 
 import account.Account;
-import account.AccountDatabase;
 import customer.Customer;
 import menus.customerMenu.CustomerMenu;
-import utils.InputReader;
 import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
 public class Withdraw implements Transaction{
     public Withdraw(Customer customer) {
-        BigDecimal amountToWithDraw = getAmountFromCustomer(customer);
+        BigDecimal amountToWithDraw = promptCustomerForAmount(customer);
         executeWithdrawal(customer, amountToWithDraw);
         System.out.println("Withdrawal succeeded.");
         new ViewBalance(customer);
