@@ -51,4 +51,8 @@ public class Customer {
         this.hashingSalt = HashGenerator.getSalt();
         this.password = HashGenerator.get_SHA_256_SecurePassword(password, hashingSalt);
     }
+
+    public void setUsername(String username) {
+        this.userName = username;
+    }
 }

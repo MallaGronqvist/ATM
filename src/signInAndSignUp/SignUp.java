@@ -14,27 +14,43 @@ public class SignUp {
     public SignUp() {
         final String fullName = getFullName();
         final String userName = getUserName();
-        final String passWord = getPassword();
 
         Customer newCustomer = new Customer(fullName, userName);
-        try {
-            newCustomer.setPassword(passWord);
-        } catch (NoSuchAlgorithmException e) {
-            System.out.println("An unexpected error has happened. You cannot create an account at the moment.");
 
-            new MainMenu();
-        }
-        Account newAccount = new Account();
-        newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
-        newCustomer.setAccountNumber(newAccount.getAccountNumber());
+        attemptSetPassword(newCustomer);
+
+        assignAccount(newCustomer);
+
         CustomerDatabase.addCustomer(newCustomer);
-        AccountDatabase.addAccount(newAccount);
 
         new MainMenu();
     }
 
+    private void assignAccount(Customer newCustomer) {
+        Account newAccount = new Account();
+
+        newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
+
+        newCustomer.setAccountNumber(newAccount.getAccountNumber());
+
+        AccountDatabase.addAccount(newAccount);
+    }
+
+    public static void attemptSetPassword(Customer newCustomer) {
+        final String passWord = getPassword();
+
+        try {
+            newCustomer.setPassword(passWord);
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("An unexpected error has happened. You cannot create a password at the moment.");
+
+            new MainMenu();
+        }
+    }
+
     public static String getUserName(){
-        String userName = InputReader.requestTextInput("Enter user name:");
+        String userName = InputReader.requestTextInput("Choose a user name:");
+
         if (CustomerDatabase.userNameAlreadyTaken(userName)){
             System.out.println("The user name you entered is already taken. Choose another one.");
             userName = getUserName();
@@ -47,6 +63,6 @@ public class SignUp {
     }
 
     public static String getPassword(){
-        return InputReader.requestTextInput("Enter password:");
+        return InputReader.requestTextInput("Choose a password:");
     }
 }

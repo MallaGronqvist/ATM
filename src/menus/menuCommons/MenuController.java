@@ -1,13 +1,12 @@
-package menus.customerMenu;
-
+package menus.menuCommons;
 
 import java.util.Scanner;
 
-public class CustomerMenuController {
-    private final CustomerMenuModel model;
-    private final CustomerMenuView view;
+public class MenuController {
+    private final MenuModel model;
+    private final MenuView view;
 
-    public CustomerMenuController(CustomerMenuModel model, CustomerMenuView view) {
+    public MenuController(MenuModel model, MenuView view) {
         this.model = model;
         this.view = view;
     }
@@ -21,7 +20,7 @@ public class CustomerMenuController {
 
             model.processOption(selectedOption);
 
-        } catch (NumberFormatException | IndexOutOfBoundsException exception) {
+        } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException exception) {
             view.printInvalidOption();
             view.requestUserInput();
             readUserInput();

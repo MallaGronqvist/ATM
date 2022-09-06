@@ -1,14 +1,13 @@
-package menus.mainMenu;
+package menus.menuCommons;
 
 import utils.MenuPrinter;
 
 import java.util.List;
 
-public class MainMenuView {
-
-    public MainMenuView(List<String> menuOptions) {
+public class MenuView {
+    public MenuView(String title, List<String> menuOptions) {
         MenuPrinter.clearConsole();
-        System.out.println("*****ATM*****");
+        System.out.println(title);
         System.out.println("Choose an operation:");
 
         MenuPrinter.listOptions(menuOptions);

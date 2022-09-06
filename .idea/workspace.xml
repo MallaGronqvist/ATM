@@ -7,12 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring.">
+      <change afterPath="$PROJECT_DIR$/src/menus/EditCustomerMenu/EditCustomerMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/EditCustomerMenu/EditCustomerMenuModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/ViewBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Withdraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662377698388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Did some more refactoring.">
+      <created>1662383847594</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662383847594</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

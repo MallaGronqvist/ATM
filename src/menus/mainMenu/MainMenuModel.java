@@ -1,12 +1,13 @@
 package menus.mainMenu;
 
+import menus.menuCommons.MenuModel;
 import signInAndSignUp.SignIn;
 import signInAndSignUp.SignUp;
 
 import java.util.List;
 
 
-public class MainMenuModel {
+public class MainMenuModel implements MenuModel {
     private final List<String> menuOptions = List.of("Sign in", "Sign up");
 
     public List<String> getMenuOptions () {

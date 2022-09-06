@@ -1,11 +1,14 @@
 package menus.mainMenu;
 
+import menus.menuCommons.MenuController;
+import menus.menuCommons.MenuView;
+
 public class MainMenu {
 
     public MainMenu() {
         MainMenuModel model = new MainMenuModel();
-        MainMenuView view = new MainMenuView(model.getMenuOptions());
-        MainMenuController controller = new MainMenuController(model, view);
+        MenuView view = new MenuView("***ATM***", model.getMenuOptions());
+        MenuController controller = new MenuController(model, view);
 
         controller.readUserInput();
     }

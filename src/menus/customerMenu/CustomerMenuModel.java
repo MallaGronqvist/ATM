@@ -1,6 +1,8 @@
 package menus.customerMenu;
 
+import menus.EditCustomerMenu.EditCustomerMenu;
 import menus.mainMenu.MainMenu;
+import menus.menuCommons.MenuModel;
 import transactions.Deposit;
 import transactions.Transfer;
 import transactions.Withdraw;
@@ -10,7 +12,7 @@ import utils.MenuPrinter;
 
 import java.util.List;
 
-public class CustomerMenuModel {
+public class CustomerMenuModel implements MenuModel {
     private final List<String> menuOptions = List.of("View balance", "Withdraw money", "Deposit money",
             "Transfer money", "Edit my customer details", "Sign out");
 
@@ -33,7 +35,7 @@ public class CustomerMenuModel {
             case 2 -> new Withdraw(customer);
             case 3 -> new Deposit(customer);
             case 4 -> new Transfer(customer);
-            case 5 -> System.out.println("edit details");
+            case 5 -> new EditCustomerMenu(customer);
             case 6 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
         }

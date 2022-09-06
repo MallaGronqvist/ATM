@@ -1,6 +1,7 @@
 package customer;
 
 import customer.Customer;
+import signInAndSignUp.SignUp;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,5 +28,15 @@ public class CustomerDatabase {
 
     public static boolean userNameAlreadyTaken(String userName){
         return allCustomers.containsKey(userName);
+    }
+
+    public static void updateUsername(Customer customer){
+        String newUsername = SignUp.getUserName();
+
+        Customer updatedCustomer = allCustomers.remove(customer.getUserName());
+
+        updatedCustomer.setUsername(newUsername);
+
+        allCustomers.put(updatedCustomer.getUserName(), updatedCustomer);
     }
 }
