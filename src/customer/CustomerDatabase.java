@@ -1,6 +1,5 @@
 package customer;
 
-import customer.Customer;
 import signInAndSignUp.SignUp;
 
 import java.util.HashMap;

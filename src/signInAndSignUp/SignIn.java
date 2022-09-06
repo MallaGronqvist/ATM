@@ -6,6 +6,7 @@ import customer.HashGenerator;
 import menus.customerMenu.CustomerMenu;
 import menus.mainMenu.MainMenu;
 import utils.InputReader;
+import utils.MenuPrinter;
 
 import java.security.NoSuchAlgorithmException;
 
@@ -19,17 +20,18 @@ public class SignIn {
             new CustomerMenu(customer);
 
         } catch (NullPointerException e) {
-            System.out.println("No account was found with that user name.");
+            System.out.println("No account was found with that username.");
         } catch (NoSuchAlgorithmException e) {
             System.out.println("An unexpected error has occurred. You cannot sign in at the moment.");
         } catch (IncorrectPasswordException e) {
             System.out.println("You entered an incorrect password.");
         }
+        MenuPrinter.waitForEnter();
         new MainMenu();
     }
 
     private static Customer getCustomerByUserName()throws NullPointerException{
-        String userName = InputReader.requestTextInput("Enter user name:");
+        String userName = InputReader.requestTextInput("Enter username:");
 
         return CustomerDatabase.getCustomer(userName);
     }
