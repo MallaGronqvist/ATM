@@ -4,6 +4,7 @@ import account.Account;
 import account.AccountDatabase;
 import customer.Customer;
 import utils.InputReader;
+import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
@@ -20,7 +21,6 @@ public class Transfer implements Transaction {
         Account targetAccount = AccountDatabase.getAccount(targetAccountNumber);
 
         if (invalidTargetAccount(targetAccount)) {
-
             new Transfer(customer);
 
         } else {
@@ -35,16 +35,16 @@ public class Transfer implements Transaction {
     }
 
     private void displaySuccessfulTransfer(Customer customer, Account targetAccount, BigDecimal amount) {
+        MenuPrinter.clearConsole();
+
         System.out.println("Successfully transferred: ");
 
         displayCurrency(amount);
 
         System.out.println("Recipient account: ");
-
         System.out.println(targetAccount.getAccountNumber());
-
+        System.out.println();
         System.out.println("See current balance below.");
-
         System.out.println();
 
         new ViewBalance(customer);

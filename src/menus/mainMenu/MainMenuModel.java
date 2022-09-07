@@ -1,8 +1,8 @@
 package menus.mainMenu;
 
+import customer.customerAuthentication.SignIn;
+import customer.customerAuthentication.SignUp;
 import menus.menuCommons.MenuModel;
-import signInAndSignUp.SignIn;
-import signInAndSignUp.SignUp;
 
 import java.util.List;
 
@@ -10,11 +10,11 @@ import java.util.List;
 public class MainMenuModel implements MenuModel {
     private final List<String> menuOptions = List.of("Sign in", "Sign up");
 
-    public List<String> getMenuOptions () {
+    public List<String> getMenuOptions() {
         return menuOptions;
     }
 
-    public void processOption ( int selectedOption) throws IndexOutOfBoundsException {
+    public void processOption(int selectedOption) throws IndexOutOfBoundsException {
 
         switch (selectedOption) {
             case 1 -> new SignIn();

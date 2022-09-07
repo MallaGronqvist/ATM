@@ -23,7 +23,7 @@ public class Withdraw implements Transaction {
     static void executeWithdrawal(Customer customer, BigDecimal amountToWithDraw) {
         Account account = AccountDatabase.getAccount(customer.getAccountNumber());
 
-        Transaction.confirmSourceAccount(customer, account);
+        Transaction.confirmCustomersAccount(customer, account);
 
         try {
             account.withDraw(amountToWithDraw);

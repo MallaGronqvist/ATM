@@ -16,7 +16,7 @@ public class ViewBalance implements Transaction {
 
         Account account = AccountDatabase.getAccount(customer.getAccountNumber());
 
-        Transaction.confirmSourceAccount(customer, account);
+        Transaction.confirmCustomersAccount(customer, account);
 
         System.out.println("Account number: " + account.getAccountNumber());
 

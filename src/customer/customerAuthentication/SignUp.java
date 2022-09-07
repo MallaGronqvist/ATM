@@ -1,4 +1,4 @@
-package signInAndSignUp;
+package customer.customerAuthentication;
 
 import account.Account;
 import account.AccountDatabase;
@@ -26,18 +26,8 @@ public class SignUp {
         new MainMenu();
     }
 
-    private void assignAccount(Customer newCustomer) {
-        Account newAccount = new Account();
-
-        newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
-
-        newCustomer.setAccountNumber(newAccount.getAccountNumber());
-
-        AccountDatabase.addAccount(newAccount);
-    }
-
     public static void attemptSetPassword(Customer newCustomer) {
-        final String passWord = getPassword();
+        final String passWord = InputReader.requestTextInput("Choose a password:");
 
         try {
             newCustomer.setPassword(passWord);
@@ -48,21 +38,29 @@ public class SignUp {
         }
     }
 
-    public static String getUserName(){
+    public static String getUserName() {
         String userName = InputReader.requestTextInput("Choose a user name:");
 
-        if (CustomerDatabase.userNameAlreadyTaken(userName)){
+        if (CustomerDatabase.userNameAlreadyTaken(userName)) {
             System.out.println("The user name you entered is already taken. Choose another one.");
             userName = getUserName();
         }
         return userName;
     }
 
-    public static String getFullName(){
-        return InputReader.requestTextInput("Enter full name:");
+    public static String getFullName() {
+        String firstName = InputReader.requestTextInput("Enter first name:");
+        String lastName = InputReader.requestTextInput("Enter last name:");
+        return firstName + " " + lastName;
     }
 
-    public static String getPassword(){
-        return InputReader.requestTextInput("Choose a password:");
+    private void assignAccount(Customer newCustomer) {
+        Account newAccount = new Account();
+
+        newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
+
+        newCustomer.setAccountNumber(newAccount.getAccountNumber());
+
+        AccountDatabase.addAccount(newAccount);
     }
 }

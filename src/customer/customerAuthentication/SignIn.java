@@ -1,8 +1,7 @@
-package signInAndSignUp;
+package customer.customerAuthentication;
 
 import customer.Customer;
 import customer.CustomerDatabase;
-import customer.HashGenerator;
 import menus.customerMenu.CustomerMenu;
 import menus.mainMenu.MainMenu;
 import utils.InputReader;
@@ -30,7 +29,7 @@ public class SignIn {
         new MainMenu();
     }
 
-    private static Customer getCustomerByUserName()throws NullPointerException{
+    private static Customer getCustomerByUserName() throws NullPointerException {
         String userName = InputReader.requestTextInput("Enter username:");
 
         return CustomerDatabase.getCustomer(userName);
@@ -41,7 +40,7 @@ public class SignIn {
         String SHA_256_convertedPassword =
                 HashGenerator.get_SHA_256_SecurePassword(password, customer.getHashingSalt());
 
-        if(!customer.getPassword().equals(SHA_256_convertedPassword)){
+        if (!customer.getPassword().equals(SHA_256_convertedPassword)) {
             throw new IncorrectPasswordException(password);
         }
     }
@@ -50,7 +49,7 @@ public class SignIn {
         String incorrectPassword;
 
         IncorrectPasswordException(String password) {
-          incorrectPassword = password;
+            incorrectPassword = password;
         }
     }
 }

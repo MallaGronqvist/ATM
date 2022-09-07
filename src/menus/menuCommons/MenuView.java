@@ -7,6 +7,7 @@ import java.util.List;
 public class MenuView {
     public MenuView(String title, List<String> menuOptions) {
         MenuPrinter.clearConsole();
+
         System.out.println(title);
         System.out.println("Choose an operation:");
 

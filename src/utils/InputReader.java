@@ -3,7 +3,7 @@ package utils;
 import java.util.Scanner;
 
 public class InputReader {
-    public static boolean startsWithSpace(String input) {
+    private static boolean startsWithSpace(String input) {
         if (input.startsWith(" ")) {
             System.out.println("Your input starts with a space. This is not allowed. Try again.");
 
@@ -14,7 +14,8 @@ public class InputReader {
     }
 
     public static String requestTextInput(String request) {
-        System.out.println(request);
+        System.out.println();
+        System.out.print(request);
 
         String input = readUserInput();
 
@@ -25,7 +26,7 @@ public class InputReader {
         return input;
     }
 
-    public static String readUserInput() {
+    private static String readUserInput() {
         Scanner keyboard = new Scanner(System.in);
 
         return keyboard.nextLine();

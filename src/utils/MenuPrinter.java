@@ -17,7 +17,7 @@ public class MenuPrinter {
         }
     }
 
-    public static void listOptions(List<?> options) {
+    public static void listOptions(List<String> options) {
 
         for (int index = 0; index < options.size(); index++) {
             int number = index + 1;
