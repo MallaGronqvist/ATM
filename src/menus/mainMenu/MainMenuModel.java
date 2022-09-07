@@ -7,11 +7,10 @@ import menus.menuCommons.MenuModel;
 import java.util.List;
 
 
-public class MainMenuModel implements MenuModel {
-    private final List<String> menuOptions = List.of("Sign in", "Sign up");
+public class MainMenuModel extends MenuModel {
 
-    public List<String> getMenuOptions() {
-        return menuOptions;
+    public MainMenuModel() {
+        super.options = List.of("Sign in", "Sign up");
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {

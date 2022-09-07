@@ -1,7 +1,7 @@
 package menus.customerMenu;
 
 import customer.Customer;
-import menus.ChangeCredentialsMenu.ChangeCredentialsMenu;
+import menus.changeCredentialsMenu.ChangeCredentialsMenu;
 import menus.mainMenu.MainMenu;
 import menus.menuCommons.MenuModel;
 import transactions.Deposit;
@@ -12,18 +12,13 @@ import utils.MenuPrinter;
 
 import java.util.List;
 
-public class CustomerMenuModel implements MenuModel {
-    private final List<String> menuOptions = List.of("View balance", "Withdraw money", "Deposit money",
-            "Transfer money", "Change my customer credentials", "Sign out");
-
-    Customer customer;
+public class CustomerMenuModel extends MenuModel {
+    private final Customer customer;
 
     public CustomerMenuModel(Customer customer) {
+        super.options = List.of("View balance", "Withdraw money", "Deposit money",
+                "Transfer money", "Change my customer credentials", "Sign out");
         this.customer = customer;
-    }
-
-    public List<String> getMenuOptions() {
-        return menuOptions;
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {

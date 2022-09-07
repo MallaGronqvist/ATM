@@ -8,7 +8,7 @@ import utils.InputReader;
 import java.math.BigDecimal;
 
 public interface Transaction {
-    final int maxLimit = 20000;
+    int maxLimit = 20000;
 
     static void confirmCustomersAccount(Customer customer, Account customersAccount) {
         if (customersAccount == null) {

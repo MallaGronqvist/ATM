@@ -1,4 +1,4 @@
-package menus.ChangeCredentialsMenu;
+package menus.changeCredentialsMenu;
 
 import customer.Customer;
 import menus.menuCommons.MenuController;

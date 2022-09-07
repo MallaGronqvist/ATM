@@ -46,7 +46,7 @@ public class SignIn {
     }
 
     static class IncorrectPasswordException extends Exception {
-        String incorrectPassword;
+        final String incorrectPassword;
 
         IncorrectPasswordException(String password) {
             incorrectPassword = password;

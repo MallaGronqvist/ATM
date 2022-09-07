@@ -6,29 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring.">
-      <change afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/HashGenerator.java" afterDir="false" />
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did more refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/HashGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/EditCustomerMenu/EditCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/EditCustomerMenu/EditCustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/changeCredentialsMenu/ChangeCredentialsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/changeCredentialsMenu/ChangeCredentialsMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signInAndSignUp/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transactions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/ViewBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/MenuPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MenuPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +39,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2E6xdckyYL06PFSEk6QlmhUhJkU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,23 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -206,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662472121326</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Did more refactoring.">
+      <created>1662544708246</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662544708246</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +223,7 @@
     <MESSAGE value="Did some refactoring." />
     <MESSAGE value="Did some more refactoring and worked on change password + change username -feature." />
     <MESSAGE value="Did some more refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some more refactoring." />
+    <MESSAGE value="Did more refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did more refactoring." />
   </component>
 </project>

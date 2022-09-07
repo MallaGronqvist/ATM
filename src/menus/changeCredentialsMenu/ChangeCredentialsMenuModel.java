@@ -1,4 +1,4 @@
-package menus.ChangeCredentialsMenu;
+package menus.changeCredentialsMenu;
 
 import customer.Customer;
 import customer.CustomerDatabase;
@@ -7,12 +7,11 @@ import menus.menuCommons.MenuModel;
 
 import java.util.List;
 
-public class ChangeCredentialsMenuModel implements MenuModel {
-
-    List<String> options = List.of("Change username", "Change password");
-    Customer customer;
+public class ChangeCredentialsMenuModel extends MenuModel {
+    private final Customer customer;
 
     public ChangeCredentialsMenuModel(Customer customer) {
+        super.options = List.of("Change username", "Change password");
         this.customer = customer;
     }
 
@@ -28,12 +27,8 @@ public class ChangeCredentialsMenuModel implements MenuModel {
 
         SignUp.attemptSetPassword(customer);
 
-        System.out.println("Your password was changed successfully.");
+        System.out.println("Your password was set successfully.");
 
-    }
-
-    public List<String> getMenuOptions() {
-        return options;
     }
 
     public void processOption(int selectedOption) throws IndexOutOfBoundsException {
