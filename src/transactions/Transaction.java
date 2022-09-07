@@ -31,8 +31,7 @@ public interface Transaction {
 
             checkForDiscontinuedTransaction((amount == null), customer);
 
-
-            // Amount shouldn't be negative or exceed the max limit of 20 000.
+            // Amount shouldn't be negative or exceed the max limit.
             if ((amount.compareTo(new BigDecimal(0)) == -1) || (amount.compareTo(new BigDecimal(maxLimit)) == 1)) {
                 throw new IllegalArgumentException();
             }

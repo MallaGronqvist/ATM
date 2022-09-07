@@ -16,7 +16,7 @@ public class Account {
     }
 
     public void withDraw(BigDecimal amount) throws InsufficientBalanceException {
-        // If balance is lesser than the amount to withdraw.
+        // If balance is less than the amount to withdraw.
         if (this.balance.compareTo(amount) == -1) {
             throw new InsufficientBalanceException();
         }
