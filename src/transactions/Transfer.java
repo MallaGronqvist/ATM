@@ -13,8 +13,7 @@ import static transactions.ViewBalance.displayCurrency;
 
 public class Transfer implements Transaction {
     public Transfer(Customer customer) {
-        String targetAccountNumber = InputReader.requestTextInput("Enter the recipient's account number." +
-                "\n[ Or enter 'x' to discontinue transaction ]:");
+        String targetAccountNumber = InputReader.requestTextInput("Enter the recipient's account number.");
 
         checkForDiscontinuedTransaction(targetAccountNumber.equalsIgnoreCase("x"), customer);
 

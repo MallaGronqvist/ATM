@@ -6,15 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did more refactoring.">
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some minor refactoring.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/changeCredentialsMenu/ChangeCredentialsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/ChangeCredentialsMenu/ChangeCredentialsMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/changeCredentialsMenu/ChangeCredentialsMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transactions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transactions/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transactions/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662544708246</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Did more refactoring.">
+      <created>1662546297068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662546297068</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Did some minor refactoring.">
+      <created>1662546470984</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662546470984</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +239,7 @@
     <MESSAGE value="Did some more refactoring and worked on change password + change username -feature." />
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Did more refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did more refactoring." />
+    <MESSAGE value="Did some minor refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some minor refactoring." />
   </component>
 </project>

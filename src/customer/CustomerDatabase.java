@@ -30,7 +30,7 @@ public class CustomerDatabase {
     }
 
     public static void updateUsername(Customer customer) {
-        String newUsername = SignUp.getUserName();
+        String newUsername = SignUp.promptCustomerForUserName();
 
         Customer updatedCustomer = allCustomers.remove(customer.getUserName());
 

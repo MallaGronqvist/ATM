@@ -48,8 +48,7 @@ public interface Transaction {
 
     private BigDecimal requestAmount() throws NumberFormatException {
         String input = InputReader.requestTextInput("Enter amount. Max limit: " + maxLimit + " kr" +
-                "\nUse comma (,) or dot (.) for decimal numbers." +
-                "\n[ Enter 'x' to discontinue transaction ]:");
+                "\nUse comma (,) or dot (.) for decimal numbers.");
 
         input = input.replaceAll(",", ".");
 

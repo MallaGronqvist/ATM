@@ -1,5 +1,7 @@
 package customer;
 
+import account.Account;
+import account.AccountDatabase;
 import customer.customerAuthentication.HashGenerator;
 
 import java.security.NoSuchAlgorithmException;
@@ -52,5 +54,12 @@ public class Customer {
 
     public String getFullName() {
         return FULL_NAME;
+    }
+
+    public void assignAccount() {
+        Account newAccount = new Account();
+        newAccount.setAccountNumber(AccountDatabase.generateNewAccountNumber());
+        this.setAccountNumber(newAccount.getAccountNumber());
+        AccountDatabase.addAccount(newAccount);
     }
 }
