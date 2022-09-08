@@ -2,7 +2,7 @@ package customer;
 
 import account.Account;
 import account.AccountDatabase;
-import customer.customerAuthentication.HashGenerator;
+import customerOperations.customerAuthentication.HashGenerator;
 
 import java.security.NoSuchAlgorithmException;
 

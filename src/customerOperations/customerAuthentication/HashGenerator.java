@@ -1,4 +1,4 @@
-package customer.customerAuthentication;
+package customerOperations.customerAuthentication;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -2,7 +2,7 @@ package menus.customerMenu;
 
 import customer.Customer;
 import customerOperations.*;
-import menus.changeCredentialsMenu.ChangeCredentialsMenu;
+import customerOperations.customerAuthentication.ChangeCredentials;
 import menus.mainMenu.MainMenu;
 import menus.menuCommons.MenuModel;
 import utils.MenuPrinter;

@@ -1,6 +1,6 @@
 package customer;
 
-import customer.customerAuthentication.SignUp;
+import customerOperations.customerAuthentication.SignUp;
 
 import java.util.HashMap;
 import java.util.Map;

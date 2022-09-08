@@ -1,7 +1,7 @@
 package menus.mainMenu;
 
-import customer.customerAuthentication.SignIn;
-import customer.customerAuthentication.SignUp;
+import customerOperations.customerAuthentication.SignIn;
+import customerOperations.customerAuthentication.SignUp;
 import menus.menuCommons.MenuModel;
 import utils.MenuPrinter;
 

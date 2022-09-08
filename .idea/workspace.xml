@@ -7,19 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring.">
-      <change afterPath="$PROJECT_DIR$/src/customerOperations/ChangeCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planification/ATM Use case diagram.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planification/Functional Requirements.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planification/Product backlog.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planification/Sequence Diagram Sign Up.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/CustomerDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/HashGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/HashGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/ChangeCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/ChangeCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/ViewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/ViewBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transactions/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662578612726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Did some more refactoring.">
+      <created>1662633970359</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662633970359</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Did some more refactoring.">
+      <created>1662634068692</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662634068692</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

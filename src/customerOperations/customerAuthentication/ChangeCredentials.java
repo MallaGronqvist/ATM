@@ -1,8 +1,8 @@
-package customerOperations;
+package customerOperations.customerAuthentication;
 
 import customer.Customer;
 import customer.CustomerDatabase;
-import customer.customerAuthentication.SignUp;
+import customerOperations.customerAuthentication.SignUp;
 import utils.MenuPrinter;
 
 import java.util.List;

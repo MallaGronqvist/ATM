@@ -1,4 +1,4 @@
-package customer.customerAuthentication;
+package customerOperations.customerAuthentication;
 
 import customer.Customer;
 import customer.CustomerDatabase;
