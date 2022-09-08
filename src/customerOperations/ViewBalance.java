@@ -1,4 +1,4 @@
-package transactions;
+package customerOperations;
 
 import account.Account;
 import account.AccountDatabase;
@@ -12,6 +12,8 @@ import java.util.Locale;
 public class ViewBalance implements Transaction {
 
     public ViewBalance(Customer customer) {
+        System.out.println("***View Balance***");
+        System.out.println();
         System.out.println("Account owner: " + customer.getFullName());
 
         Account account = AccountDatabase.getAccount(customer.getAccountNumber());

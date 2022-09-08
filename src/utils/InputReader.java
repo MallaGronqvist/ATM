@@ -3,44 +3,42 @@ package utils;
 import menus.mainMenu.MainMenu;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InputReader {
-    private static boolean startsWithSpace(String input) {
-        if (input.startsWith(" ")) {
-            System.out.println("Your input starts with a space. This is not allowed. Try again.");
 
-            return true;
-        }
-        return false;
-    }
-
-    private static boolean startsWithZero(String input) {
-        if (input.startsWith("0")) {
-            System.out.println("Your input starts with a zero. This is not allowed. Try again.");
-
-            return true;
-        }
-        return false;
-    }
-
-    private static boolean containsNoCharacters(String input){
+    private static boolean startsWithInvalidCharacter(String input){
         if (input.equals("")) {
-            System.out.println("No input. This is not allowed. Try again.");
-
+            System.out.println("Blanc input not allowed. Try again.");
+            return true;
+        }else if (input.startsWith(" ") || input.startsWith("'") || input.startsWith("0") || input.startsWith("-")) {
+            System.out.println("Leading whitespace, hyphen, apostrophe or zero not allowed. Try again.");
             return true;
         }
         return false;
     }
 
-    public static String requestTextInput(String request) {
+    public static String requestInput(String request, String inputType) {
         System.out.println();
         System.out.println(request);
-        System.out.println("[ Enter 'x' to discontinue ]: ");
+
+        switch(inputType){
+            case "name" -> System.out.println("Allowed characters: \na-z, A-Z, apostrophe ('), hyphen (-) " +
+                    "and separating whitespace.");
+            case "credential" -> System.out.println("Leading whitespace, hyphen, apostrophe or zero not allowed." +
+                    " White space not allowed.");
+            case "accountNumber" -> System.out.println("Digits and hyphen allowed.");
+            case "amount" -> System.out.println("\nUse comma (,) or dot (.) for decimal numbers.");
+            default -> {}
+        }
+        System.out.println();
+        System.out.println("Enter 'x' to discontinue: ");
 
         String input = readUserInput();
 
-        if (startsWithSpace(input) || startsWithZero(input) || containsNoCharacters(input)) {
-            input = requestTextInput(request);
+        if (startsWithInvalidCharacter(input)) {
+            input = requestInput(request, inputType);
         }
         return input;
     }
@@ -64,9 +62,17 @@ public class InputReader {
         }
     }
 
-    public static void checkForDiscontinuedOperation(String input){
+    public static void checkForDiscontinuedInput(String input){
         if(input.equalsIgnoreCase("x")){
             new MainMenu();
         }
+    }
+
+    public static boolean validateLetters(String input) {
+        // Validate input to contain only letters a-z, whitespace, apostrophe and hyphen.
+        String allowedCharacters = "^[a-zA-Z\\s'-]+$";
+        Pattern pattern = Pattern.compile(allowedCharacters, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(input);
+        return matcher.find();
     }
 }

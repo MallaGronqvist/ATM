@@ -1,4 +1,4 @@
-package transactions;
+package customerOperations;
 
 import account.Account;
 import account.AccountDatabase;
@@ -8,12 +8,15 @@ import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
-import static transactions.Transaction.checkForDiscontinuedTransaction;
-import static transactions.ViewBalance.displayCurrency;
+import static customerOperations.Transaction.checkForDiscontinuedTransaction;
+import static customerOperations.ViewBalance.displayCurrency;
 
 public class Transfer implements Transaction {
     public Transfer(Customer customer) {
-        String targetAccountNumber = InputReader.requestTextInput("Enter the recipient's account number.");
+        System.out.println("***Transfer***");
+        System.out.println();
+
+        String targetAccountNumber = getTargetAccountNumber();
 
         checkForDiscontinuedTransaction(targetAccountNumber.equalsIgnoreCase("x"), customer);
 
@@ -31,6 +34,12 @@ public class Transfer implements Transaction {
 
             displaySuccessfulTransfer(customer, targetAccount, amount);
         }
+
+    }
+
+    private String getTargetAccountNumber() {
+        String targetAccountNumber = InputReader.requestInput("Enter the recipient's account number.", "accountNumber");
+        return targetAccountNumber;
     }
 
     private void displaySuccessfulTransfer(Customer customer, Account targetAccount, BigDecimal amount) {
@@ -51,7 +60,9 @@ public class Transfer implements Transaction {
 
     private boolean invalidTargetAccount(Account targetAccount) {
         if (targetAccount == null) {
-            System.out.println("The entered account number was invalid.");
+            MenuPrinter.clearConsole();
+            System.out.println("The entered account number was invalid. Try again.");
+            System.out.println();
             return true;
         } else {
             return false;

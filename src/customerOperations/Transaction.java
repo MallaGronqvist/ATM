@@ -1,14 +1,16 @@
-package transactions;
+package customerOperations;
 
 import account.Account;
 import customer.Customer;
 import menus.customerMenu.CustomerMenu;
 import utils.InputReader;
+import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
 public interface Transaction {
     int maxLimit = 20000;
+    int minLimit = 1;
 
     static void confirmCustomersAccount(Customer customer, Account customersAccount) {
         if (customersAccount == null) {
@@ -31,12 +33,13 @@ public interface Transaction {
 
             checkForDiscontinuedTransaction((amount == null), customer);
 
-            // Amount shouldn't be negative or exceed the max limit.
-            if ((amount.compareTo(new BigDecimal(0)) == -1) || (amount.compareTo(new BigDecimal(maxLimit)) == 1)) {
+            // Amount shouldn't be negative or beyond the allowed amount range.
+            if ((amount.compareTo(new BigDecimal(0)) == -1) || (amount.compareTo(new BigDecimal(maxLimit)) == 1)
+                    || amount.compareTo(new BigDecimal(minLimit)) == -1) {
                 throw new IllegalArgumentException();
             }
         } catch (IllegalArgumentException e) {
-            System.out.println();
+            MenuPrinter.clearConsole();
             System.out.println("Invalid amount.");
             System.out.println();
 
@@ -47,13 +50,15 @@ public interface Transaction {
     }
 
     private BigDecimal requestAmount() throws NumberFormatException {
-        String input = InputReader.requestTextInput("Enter amount. Max limit: " + maxLimit + " kr" +
-                "\nUse comma (,) or dot (.) for decimal numbers.");
+        String input = InputReader.requestInput("Enter amount in digits. \nAllowed amount: " +
+                minLimit + " - " + maxLimit + " kr.", "amount");
 
         input = input.replaceAll(",", ".");
 
         // Only two decimals are allowed.
-        if (getNumberOfDecimalPlaces(input) > 2) { throw new NumberFormatException();}
+        if (getNumberOfDecimalPlaces(input) > 2) {
+            throw new NumberFormatException();
+        }
 
         if (input.equalsIgnoreCase("x")) {
             return null;

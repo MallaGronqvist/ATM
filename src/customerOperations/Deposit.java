@@ -1,4 +1,4 @@
-package transactions;
+package customerOperations;
 
 import account.Account;
 import account.AccountDatabase;
@@ -13,6 +13,8 @@ public class Deposit implements Transaction {
         Account account = AccountDatabase.getAccount(customer.getAccountNumber());
 
         Transaction.confirmCustomersAccount(customer, account);
+
+        System.out.println("***Deposit***");
 
         BigDecimal amountToDeposit = promptCustomerForAmount(customer);
 

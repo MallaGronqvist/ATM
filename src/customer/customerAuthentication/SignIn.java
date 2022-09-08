@@ -9,7 +9,7 @@ import utils.MenuPrinter;
 
 import java.security.NoSuchAlgorithmException;
 
-import static utils.InputReader.checkForDiscontinuedOperation;
+import static utils.InputReader.checkForDiscontinuedInput;
 
 public class SignIn {
     public SignIn() {
@@ -32,14 +32,14 @@ public class SignIn {
     }
 
     private static Customer getCustomerByUserName() throws NullPointerException {
-        String userName = InputReader.requestTextInput("Enter username.");
-        checkForDiscontinuedOperation(userName);
+        String userName = InputReader.requestInput("Enter username.", "credential");
+        checkForDiscontinuedInput(userName);
         return CustomerDatabase.getCustomer(userName);
     }
 
     private static void checkPassword(Customer customer) throws NoSuchAlgorithmException, IncorrectPasswordException {
-        String password = InputReader.requestTextInput("Enter password.");
-        checkForDiscontinuedOperation(password);
+        String password = InputReader.requestInput("Enter password.", "credential");
+        checkForDiscontinuedInput(password);
 
         String SHA_256_convertedPassword =
                 HashGenerator.get_SHA_256_SecurePassword(password, customer.getHashingSalt());

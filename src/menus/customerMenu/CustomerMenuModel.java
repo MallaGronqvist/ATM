@@ -1,13 +1,10 @@
 package menus.customerMenu;
 
 import customer.Customer;
+import customerOperations.*;
 import menus.changeCredentialsMenu.ChangeCredentialsMenu;
 import menus.mainMenu.MainMenu;
 import menus.menuCommons.MenuModel;
-import transactions.Deposit;
-import transactions.Transfer;
-import transactions.ViewBalance;
-import transactions.Withdraw;
 import utils.MenuPrinter;
 
 import java.util.List;
@@ -30,7 +27,7 @@ public class CustomerMenuModel extends MenuModel {
             case 2 -> new Withdraw(customer);
             case 3 -> new Deposit(customer);
             case 4 -> new Transfer(customer);
-            case 5 -> new ChangeCredentialsMenu(customer);
+            case 5 -> new ChangeCredentials(customer);
             case 6 -> new MainMenu();
             default -> throw new IndexOutOfBoundsException();
         }
