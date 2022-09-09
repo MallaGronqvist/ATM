@@ -16,6 +16,8 @@ public class SignIn {
         try {
             Customer customer = getCustomerByUserName();
 
+            MenuPrinter.clearConsole();
+
             checkPassword(customer);
 
             new CustomerMenu(customer);

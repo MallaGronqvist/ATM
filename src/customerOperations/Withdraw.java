@@ -6,7 +6,6 @@ import customer.Customer;
 import menus.customerMenu.CustomerMenu;
 import utils.MenuPrinter;
 
-import java.awt.*;
 import java.math.BigDecimal;
 
 public class Withdraw implements Transaction {
@@ -18,10 +17,10 @@ public class Withdraw implements Transaction {
 
         executeWithdrawal(customer, amountToWithDraw);
 
-        displaySuccesfulWithdrawal(customer);
+        displaySuccessfulWithdrawal(customer);
     }
 
-    private void displaySuccesfulWithdrawal(Customer customer) {
+    private void displaySuccessfulWithdrawal(Customer customer) {
         MenuPrinter.clearConsole();
         System.out.println("Withdrawal succeeded. See current balance below.");
         System.out.println();

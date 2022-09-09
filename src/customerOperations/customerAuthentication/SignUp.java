@@ -9,7 +9,7 @@ import utils.MenuPrinter;
 import java.security.NoSuchAlgorithmException;
 
 import static utils.InputReader.checkForDiscontinuedInput;
-import static utils.InputReader.validateLetters;
+
 
 public class SignUp {
 
@@ -17,8 +17,11 @@ public class SignUp {
         final String fullName = promptCustomerForFullName();
 
         final String userName = promptCustomerForUserName();
+
         Customer newCustomer = new Customer(fullName, userName);
+
         MenuPrinter.clearConsole();
+
         attemptSetPassword(newCustomer);
 
         newCustomer.assignAccount();
@@ -30,21 +33,16 @@ public class SignUp {
 
     private static String promptCustomerForFullName() {
         MenuPrinter.clearConsole();
+
         String firstName = InputReader.requestInput("Enter first name. ", "name");
+
         checkForDiscontinuedInput(firstName);
 
-        while (!validateLetters((firstName))) {
-            firstName = InputReader.requestInput("You entered invalid characters. Try again. \nEnter first name.", "name");
-        }
-
         MenuPrinter.clearConsole();
-        String lastName = InputReader.requestInput("Enter last name", "name");
+
+        String lastName = InputReader.requestInput("Enter last name.", "name");
 
         checkForDiscontinuedInput(lastName);
-
-        while (!validateLetters((lastName))) {
-            lastName = InputReader.requestInput("You entered invalid characters. Try again. \nEnter last name.", "name");
-        }
 
         String fullName = firstName + " " + lastName;
         // Trim eventual extra whitespace that the customer has entered.
@@ -53,12 +51,14 @@ public class SignUp {
         if (!fullNameCorrect(fullName)) {
             fullName = promptCustomerForFullName();
         }
+        MenuPrinter.clearConsole();
+
         return fullName;
     }
 
     private static boolean fullNameCorrect(String fullName) {
         MenuPrinter.clearConsole();
-        System.out.println("You entered following name: " + fullName);
+        System.out.println("You entered the following name: " + fullName);
         System.out.println();
         System.out.println("You won't be able to edit this name after signing up.");
         System.out.println("Is this name correct?");
@@ -70,15 +70,9 @@ public class SignUp {
 
         checkForDiscontinuedInput(userName);
 
-        if (userName.contains(" ")) {
-            MenuPrinter.clearConsole();
-            System.out.println("Invalid input.");
-            userName = promptCustomerForUserName();
-        }
-
         if (CustomerDatabase.userNameAlreadyTaken(userName)) {
             MenuPrinter.clearConsole();
-            System.out.println("The user name you entered is already taken. Choose another one.");
+            System.out.println("The username you entered is already taken. Choose another one.");
             userName = promptCustomerForUserName();
         }
         return userName;
@@ -100,19 +94,10 @@ public class SignUp {
     private static String promptCustomerForPassword() {
         MenuPrinter.clearConsole();
 
-        String password = InputReader.requestInput("Choose a password." +
-                "\nAllowed length is 6 - 20 characters. ", "credential");
+        String password = InputReader.requestInput("Choose a password.", "credential");
 
         checkForDiscontinuedInput(password);
 
-        if (password.contains(" ")) {
-            password = promptCustomerForPassword();
-        }
-
-        if (password.length() < 6 || password.length() > 20) {
-            System.out.println("Invalid number of characters in password. Try again.");
-            password = promptCustomerForPassword();
-        }
         return password;
     }
 }

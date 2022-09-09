@@ -6,16 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Added some project documentation.">
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Added some project documentation and made minor adjustments.">
+      <change afterPath="$PROJECT_DIR$/src/utils/InputValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customerOperations/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transfer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/HashGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/HashGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/ChangeCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/ChangeCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Malla/IdeaProjects/ATM/ProjectManagement/Diagrams",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Malla\IdeaProjects\ATM\ProjectManagement\Diagrams" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662711988345</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added some project documentation and made minor adjustments.">
+      <created>1662719554278</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662719554278</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +290,7 @@
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Did some more refactoring and added some documentation." />
     <MESSAGE value="Added some project documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some project documentation." />
+    <MESSAGE value="Added some project documentation and made minor adjustments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some project documentation and made minor adjustments." />
   </component>
 </project>

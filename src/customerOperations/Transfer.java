@@ -8,7 +8,6 @@ import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
-// import static customerOperations.Transaction.checkForDiscontinuedTransaction;
 import static customerOperations.ViewBalance.displayCurrency;
 
 public class Transfer implements Transaction {
@@ -34,12 +33,10 @@ public class Transfer implements Transaction {
 
             displaySuccessfulTransfer(customer, targetAccount, amount);
         }
-
     }
 
     private String getTargetAccountNumber() {
-        String targetAccountNumber = InputReader.requestInput("Enter the recipient's account number.", "accountNumber");
-        return targetAccountNumber;
+        return InputReader.requestInput("Enter the recipient's account number.", "accountNumber");
     }
 
     private void displaySuccessfulTransfer(Customer customer, Account targetAccount, BigDecimal amount) {

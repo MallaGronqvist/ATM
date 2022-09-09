@@ -2,7 +2,6 @@ package customerOperations.customerAuthentication;
 
 import customer.Customer;
 import customer.CustomerDatabase;
-import customerOperations.customerAuthentication.SignUp;
 import utils.MenuPrinter;
 
 import java.util.List;
@@ -16,6 +15,22 @@ public class ChangeCredentials {
 
         displayOptions(List.of("Change username", "Change password"));
         readUserInput();
+    }
+
+    private static void changeUsername(Customer customer) {
+
+        CustomerDatabase.updateUsername(customer);
+
+        System.out.println("Your username was changed successfully.");
+
+    }
+
+    private static void changePassword(Customer customer) {
+
+        SignUp.attemptSetPassword(customer);
+
+        System.out.println("Your password was set successfully.");
+
     }
 
     private void displayOptions(List<String> menuOptions) {
@@ -55,21 +70,5 @@ public class ChangeCredentials {
             case 2 -> changePassword(customer);
             default -> throw new IndexOutOfBoundsException();
         }
-    }
-
-    private static void changeUsername(Customer customer) {
-
-        CustomerDatabase.updateUsername(customer);
-
-        System.out.println("Your username was changed successfully.");
-
-    }
-
-    private static void changePassword(Customer customer) {
-
-        SignUp.attemptSetPassword(customer);
-
-        System.out.println("Your password was set successfully.");
-
     }
 }
