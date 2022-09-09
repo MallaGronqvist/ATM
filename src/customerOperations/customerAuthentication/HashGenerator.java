@@ -17,7 +17,7 @@ public class HashGenerator {
         return salt.toString();
     }
 
-    public static String get_SHA_256_SecurePassword(String passwordToHash,
+    public static String get_SHA_256_securePassword(String passwordToHash,
                                                     String salt) throws NoSuchAlgorithmException {
 
         // Create MessageDigest instance for SHA-256 algorithm.

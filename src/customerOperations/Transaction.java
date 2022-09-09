@@ -19,7 +19,7 @@ public interface Transaction {
         }
     }
 
-    static void checkForDiscontinuedTransaction(boolean discontinue, Customer customer) {
+    default void checkForDiscontinuedTransaction(boolean discontinue, Customer customer) {
         if (discontinue) {
             new CustomerMenu(customer);
         }

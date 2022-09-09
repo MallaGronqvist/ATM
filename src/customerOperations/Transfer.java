@@ -8,7 +8,7 @@ import utils.MenuPrinter;
 
 import java.math.BigDecimal;
 
-import static customerOperations.Transaction.checkForDiscontinuedTransaction;
+// import static customerOperations.Transaction.checkForDiscontinuedTransaction;
 import static customerOperations.ViewBalance.displayCurrency;
 
 public class Transfer implements Transaction {

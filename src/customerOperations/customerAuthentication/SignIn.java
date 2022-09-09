@@ -42,7 +42,7 @@ public class SignIn {
         checkForDiscontinuedInput(password);
 
         String SHA_256_convertedPassword =
-                HashGenerator.get_SHA_256_SecurePassword(password, customer.getHashingSalt());
+                HashGenerator.get_SHA_256_securePassword(password, customer.getHashingSalt());
 
         if (!customer.getPassword().equals(SHA_256_convertedPassword)) {
             throw new IncorrectPasswordException(password);

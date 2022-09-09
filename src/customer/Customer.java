@@ -25,7 +25,7 @@ public class Customer {
 
     public void setPassword(String password) throws NoSuchAlgorithmException {
         this.hashingSalt = HashGenerator.getSalt();
-        this.password = HashGenerator.get_SHA_256_SecurePassword(password, hashingSalt);
+        this.password = HashGenerator.get_SHA_256_securePassword(password, hashingSalt);
     }
 
     public String getAccountNumber() {

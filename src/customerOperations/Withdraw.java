@@ -18,6 +18,10 @@ public class Withdraw implements Transaction {
 
         executeWithdrawal(customer, amountToWithDraw);
 
+        displaySuccesfulWithdrawal(customer);
+    }
+
+    private void displaySuccesfulWithdrawal(Customer customer) {
         MenuPrinter.clearConsole();
         System.out.println("Withdrawal succeeded. See current balance below.");
         System.out.println();

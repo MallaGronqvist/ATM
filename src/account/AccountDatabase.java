@@ -24,9 +24,12 @@ public class AccountDatabase {
         return clearingNumber + accountNumber;
     }
 
-    // Ask if this should use NullPointerException
     public static Account getAccount(String accountNumber) {
-        return allAccounts.get(accountNumber);
+        if (allAccounts.containsKey(accountNumber)){
+            return allAccounts.get(accountNumber);
+        } else {
+            return null;
+        }
     }
 
     public static Map<String, Account> getAllAccounts() {

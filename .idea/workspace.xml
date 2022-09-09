@@ -6,13 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring and added some documentation.">
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Added some project documentation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planification/Functional Requirements.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Functional Requirements.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planification/Product backlog.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Product backlog.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planification/diagrams/ATM Use case diagram.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Diagrams/ATM Use case diagram.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planification/diagrams/Sequence Diagram Sign Up.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Diagrams/Sequence Diagram Sign Up.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/AccountDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/HashGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/HashGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Malla\IdeaProjects\ATM\ProjectManagement\Diagrams" />
       <recent name="C:\Users\Malla\IdeaProjects\ATM\Planification\diagrams" />
       <recent name="C:\Users\Malla\IdeaProjects\ATM\Planification" />
       <recent name="C:\Users\Malla\IdeaProjects\ATM\out" />
@@ -245,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662642214920</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added some project documentation.">
+      <created>1662711988345</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662711988345</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +279,7 @@
     <MESSAGE value="Did some minor refactoring." />
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Did some more refactoring and added some documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some more refactoring and added some documentation." />
+    <MESSAGE value="Added some project documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some project documentation." />
   </component>
 </project>
