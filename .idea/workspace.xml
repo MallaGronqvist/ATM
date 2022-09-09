@@ -6,15 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Added some project documentation and made minor adjustments.">
-      <change afterPath="$PROJECT_DIR$/src/utils/InputValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Did some more refactoring.">
       <change beforePath="$PROJECT_DIR$/src/customerOperations/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/ChangeCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/ChangeCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662719554278</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Did some more refactoring.">
+      <created>1662730393230</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662730393230</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,10 +287,10 @@
     <MESSAGE value="Did some more refactoring and worked on change password + change username -feature." />
     <MESSAGE value="Did more refactoring." />
     <MESSAGE value="Did some minor refactoring." />
-    <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Did some more refactoring and added some documentation." />
     <MESSAGE value="Added some project documentation." />
     <MESSAGE value="Added some project documentation and made minor adjustments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some project documentation and made minor adjustments." />
+    <MESSAGE value="Did some more refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some more refactoring." />
   </component>
 </project>

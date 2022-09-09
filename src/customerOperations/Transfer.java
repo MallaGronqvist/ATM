@@ -15,13 +15,16 @@ public class Transfer implements Transaction {
         System.out.println("***Transfer***");
         System.out.println();
 
-        String targetAccountNumber = getTargetAccountNumber();
+        String recipientAccountNumber = InputReader.requestInput("Enter the recipient's account number.",
+                "accountNumber");
 
-        checkForDiscontinuedTransaction(targetAccountNumber.equalsIgnoreCase("x"), customer);
+        checkForDiscontinuedTransaction(recipientAccountNumber.equalsIgnoreCase("x"), customer);
 
-        Account targetAccount = AccountDatabase.getAccount(targetAccountNumber);
+        Account recipientAccount = AccountDatabase.getAccount(recipientAccountNumber);
 
-        if (invalidTargetAccount(targetAccount)) {
+        if (invalidTargetAccount(recipientAccount) ||
+                sendingAndRecipientAccountSame(customer.getAccountNumber(), recipientAccountNumber)) {
+
             new Transfer(customer);
 
         } else {
@@ -29,14 +32,10 @@ public class Transfer implements Transaction {
 
             Withdraw.executeWithdrawal(customer, amount);
 
-            targetAccount.deposit(amount);
+            recipientAccount.deposit(amount);
 
-            displaySuccessfulTransfer(customer, targetAccount, amount);
+            displaySuccessfulTransfer(customer, recipientAccount, amount);
         }
-    }
-
-    private String getTargetAccountNumber() {
-        return InputReader.requestInput("Enter the recipient's account number.", "accountNumber");
     }
 
     private void displaySuccessfulTransfer(Customer customer, Account targetAccount, BigDecimal amount) {
@@ -62,6 +61,16 @@ public class Transfer implements Transaction {
             System.out.println();
             return true;
         } else {
+            return false;
+        }
+    }
+
+    private boolean sendingAndRecipientAccountSame(String sendingAccountNr, String recipientAccountNr){
+        if(sendingAccountNr.equals(recipientAccountNr)){
+            System.out.println("The entered recipient account is the same as the sending account.");
+            System.out.println();
+            return true;
+        } else{
             return false;
         }
     }
