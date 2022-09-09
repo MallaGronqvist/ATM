@@ -3,8 +3,9 @@ package utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class InputValidator {
-    // Firstnames and lastnames can contain, but cannot begin with hyphen or dash.
+    // First names and last names can contain, but cannot begin with hyphen or dash.
     static boolean startsWithInvalidCharacter(String input){
 
         if (input.startsWith("'") || input.startsWith("-")) {
@@ -70,14 +71,19 @@ public class InputValidator {
         return matcher.find();
     }
 
-    // Password and username must be 1-20 characters.
+    // Password and username must be 6-20 characters.
     public static boolean validCredentialLength(String input){
-        if (input.length() > 20) {
-            MenuPrinter.clearConsole();
-            System.out.println("Invalid number of characters.");
-            return false;
-        } else{
+
+        if(!input.equalsIgnoreCase("x")){
+            if (input.length() < 6 || input.length() > 20) {
+                MenuPrinter.clearConsole();
+                System.out.println("Invalid number of characters.");
+                return false;
+            }
+        }else{
             return true;
         }
+        // An extra return statement to keep the compiler happy.
+       return true;
     }
 }

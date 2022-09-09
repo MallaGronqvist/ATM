@@ -18,7 +18,8 @@ public interface Transaction {
             new CustomerMenu(customer);
         }
     }
-
+    // Checks whether customer decides to discontinue a transaction and
+    // if so, takes the customer back to the customer menu.
     default void checkForDiscontinuedTransaction(boolean discontinue, Customer customer) {
         if (discontinue) {
             new CustomerMenu(customer);

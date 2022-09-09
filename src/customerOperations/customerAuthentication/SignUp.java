@@ -9,6 +9,7 @@ import utils.MenuPrinter;
 import java.security.NoSuchAlgorithmException;
 
 import static utils.InputReader.checkForDiscontinuedInput;
+import static utils.InputReader.discontinuedInput;
 
 
 public class SignUp {
@@ -16,7 +17,11 @@ public class SignUp {
     public SignUp() {
         final String fullName = promptCustomerForFullName();
 
+        checkForDiscontinuedInput(fullName);
+
         final String userName = promptCustomerForUserName();
+
+        checkForDiscontinuedInput(userName);
 
         Customer newCustomer = new Customer(fullName, userName);
 
@@ -36,15 +41,16 @@ public class SignUp {
 
         String firstName = InputReader.requestInput("Enter first name. ", "name");
 
-        checkForDiscontinuedInput(firstName);
+        if (discontinuedInput(firstName)) { return firstName; }
 
         MenuPrinter.clearConsole();
 
         String lastName = InputReader.requestInput("Enter last name.", "name");
 
-        checkForDiscontinuedInput(lastName);
+        if (discontinuedInput(lastName)) { return lastName; }
 
         String fullName = firstName + " " + lastName;
+
         // Trim eventual extra whitespace that the customer has entered.
         fullName = fullName.trim().replaceAll(" +", " ");
 
@@ -68,7 +74,9 @@ public class SignUp {
     public static String promptCustomerForUserName() {
         String userName = InputReader.requestInput("Choose a username.", "credential");
 
-        checkForDiscontinuedInput(userName);
+        if (discontinuedInput(userName)) {
+            return userName;
+        }
 
         if (CustomerDatabase.userNameAlreadyTaken(userName)) {
             MenuPrinter.clearConsole();
@@ -95,8 +103,6 @@ public class SignUp {
         MenuPrinter.clearConsole();
 
         String password = InputReader.requestInput("Choose a password.", "credential");
-
-        checkForDiscontinuedInput(password);
 
         return password;
     }

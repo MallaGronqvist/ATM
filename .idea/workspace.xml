@@ -6,8 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Changed transfer to check that recipient and sender accounts are not the same.">
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Final commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagement/Design Document.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Design Document.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputValidator.java" afterDir="false" />
     </list>
@@ -57,7 +60,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Malla/IdeaProjects/ATM/ProjectManagement/Diagrams",
+    "last_opened_file_path": "C:/Users/Malla/IdeaProjects/ATM/ProjectManagement",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -66,6 +69,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Malla\IdeaProjects\ATM\ProjectManagement" />
       <recent name="C:\Users\Malla\IdeaProjects\ATM\ProjectManagement\Diagrams" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -275,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662731451529</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Final commit.">
+      <created>1662738700916</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662738700916</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,6 +312,7 @@
     <MESSAGE value="Added some project documentation and made minor adjustments." />
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Changed transfer to check that recipient and sender accounts are not the same." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed transfer to check that recipient and sender accounts are not the same." />
+    <MESSAGE value="Final commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit." />
   </component>
 </project>
