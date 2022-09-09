@@ -26,6 +26,7 @@ While creating this project I have practiced the agile work process.
 I have gathered requirements in a document called 'Functional requirements' that can be found in the 'Project Management' directory.
 I have also created user stories with their acceptance criteria and tasks in an Excel document. 
 This list can be found in the document 'Product backlog.pdf' in the 'Project Management' directory.
+The 'Design Document' in the same directory introduces the UI and the program flow.
 
 I have also made a UML use case diagram, UML sequence diagrams and UML class diagrams. 
 These can be found in the subdirectory called 'Diagrams' in the 'Project Management' directory.
