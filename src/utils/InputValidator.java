@@ -70,9 +70,9 @@ public class InputValidator {
         return matcher.find();
     }
 
-    // Password and username must be 6-20 characters.
+    // Password and username must be 1-20 characters.
     public static boolean validCredentialLength(String input){
-        if (input.length() < 6 || input.length() > 20) {
+        if (input.length() > 20) {
             MenuPrinter.clearConsole();
             System.out.println("Invalid number of characters.");
             return false;
