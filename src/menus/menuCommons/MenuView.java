@@ -6,6 +6,7 @@ import java.util.List;
 
 public class MenuView {
     public MenuView(String title, List<String> menuOptions) {
+        // This is the correct place to call the clear console code. ✅
         MenuPrinter.clearConsole();
 
         System.out.println(title);

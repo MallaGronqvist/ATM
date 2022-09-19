@@ -24,14 +24,13 @@ public class AccountDatabase {
         return clearingNumber + accountNumber;
     }
 
+    // Nesting -1
     public static Account getAccount(String accountNumber) {
-        if (allAccounts.containsKey(accountNumber)){
-            return allAccounts.get(accountNumber);
-        } else {
-            return null;
-        }
+        return allAccounts.getOrDefault(accountNumber, null);
     }
 
+    // Literally there is no way to access this method (no points taken, just an observation)
+    // Solution (sounds annoying but to solve this, you can create a separate jar file that has this feature, this jar is only given to the bank staff with some extra secutiry)
     public static Map<String, Account> getAllAccounts() {
         return allAccounts;
     }

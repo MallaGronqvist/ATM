@@ -5,14 +5,24 @@
       <artifact name="ATM:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Final commit.">
+    <list default="true" id="cbac8770-32f3-4fa0-8e10-2490cded75ef" name="Changes" comment="Review changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagement/Design Document.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagement/Design Document.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/AccountDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customerOperations/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/customerAuthentication/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customerOperations/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customerOperations/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/customerMenu/CustomerMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/mainMenu/MainMenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menus/menuCommons/MenuView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +42,11 @@
     <option name="BRANCH" value="View_balance" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -60,6 +75,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
     "last_opened_file_path": "C:/Users/Malla/IdeaProjects/ATM/ProjectManagement",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
@@ -294,7 +310,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="review" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -313,6 +341,7 @@
     <MESSAGE value="Did some more refactoring." />
     <MESSAGE value="Changed transfer to check that recipient and sender accounts are not the same." />
     <MESSAGE value="Final commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final commit." />
+    <MESSAGE value="Review changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review changes" />
   </component>
 </project>

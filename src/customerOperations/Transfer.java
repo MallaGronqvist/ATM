@@ -66,12 +66,15 @@ public class Transfer implements Transaction {
     }
 
     private boolean sendingAndRecipientAccountSame(String sendingAccountNr, String recipientAccountNr){
+        boolean result = false;
+
+        // safeguard
         if(sendingAccountNr.equals(recipientAccountNr)){
             System.out.println("The entered recipient account is the same as the sending account.");
             System.out.println();
-            return true;
-        } else{
-            return false;
+            result = true;
         }
+
+        return result;
     }
 }

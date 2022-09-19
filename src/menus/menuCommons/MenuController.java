@@ -2,6 +2,7 @@ package menus.menuCommons;
 
 import java.util.Scanner;
 
+// Good
 public class MenuController {
     private final MenuModel model;
     private final MenuView view;

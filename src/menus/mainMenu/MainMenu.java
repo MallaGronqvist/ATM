@@ -3,6 +3,7 @@ package menus.mainMenu;
 import menus.menuCommons.MenuController;
 import menus.menuCommons.MenuView;
 
+// Good
 public class MainMenu {
 
     public MainMenu() {

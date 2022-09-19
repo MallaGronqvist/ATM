@@ -18,8 +18,11 @@ public interface Transaction {
             new CustomerMenu(customer);
         }
     }
-    // Checks whether customer decides to discontinue a transaction and
-    // if so, takes the customer back to the customer menu.
+
+    /**
+     * Comments -1
+     * Literally everything you said in the comment is what I can read and understand from the code.
+     */
     default void checkForDiscontinuedTransaction(boolean discontinue, Customer customer) {
         if (discontinue) {
             new CustomerMenu(customer);
@@ -34,7 +37,12 @@ public interface Transaction {
 
             checkForDiscontinuedTransaction((amount == null), customer);
 
+            // Nesting -1
+            // This is a "special" verification. Should be handled as a separate method.
+            // See the "generateBorderCell" example in the Code Quality Pyramid example.
+
             // Amount shouldn't be negative or beyond the allowed amount range.
+            // Also this shows A LOT of warnings in Intelli J. Moving it to another place will make it easier to debug
             if ((amount.compareTo(new BigDecimal(0)) == -1) || (amount.compareTo(new BigDecimal(maxLimit)) == 1)
                     || amount.compareTo(new BigDecimal(minLimit)) == -1) {
                 throw new IllegalArgumentException();
@@ -50,26 +58,32 @@ public interface Transaction {
         return amount;
     }
 
+    // Comments -1
+    // Naming -1
+    // Use a variable instead of writing a comment
+    // Nesting -1 The return will stop your code, thus you don't need to use if/else,
     private BigDecimal requestAmount() throws NumberFormatException {
-        String input = InputReader.requestInput("Enter amount in digits. \nAllowed amount: " +
-                minLimit + " - " + maxLimit + " kr.", "amount");
+        int decimalNumbersAllowed = 2;
+        String prompt = String.format("🐰 Enter amount in digits. \nAllowed amount: %d - %d kr", minLimit, maxLimit);
+        String input = InputReader.requestInput(prompt, "amount");
 
         input = input.replaceAll(",", ".");
 
-        // Only two decimals are allowed.
-        if (getNumberOfDecimalPlaces(input) > 2) {
+        // Safeguards
+        if (getNumberOfDecimalPlaces(input) > decimalNumbersAllowed) {
             throw new NumberFormatException();
         }
 
         if (input.equalsIgnoreCase("x")) {
             return null;
-        } else {
-            return new BigDecimal(input);
         }
+
+        return new BigDecimal(input);
     }
 
     private int getNumberOfDecimalPlaces(String input) {
         int index = input.indexOf(".");
+
         return index < 0 ? 0 : input.length() - index - 1;
     }
 }
